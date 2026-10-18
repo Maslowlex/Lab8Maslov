@@ -2,57 +2,83 @@
 #include <stdio.h>
 #include <locale.h>
 #include <math.h>
+int zad1();
+int zad2();
+int zad3();
+int zad4();
+
+int main() {
+    (setlocale(LC_ALL, "RUS"));
+    puts("Введите номер задания из лабораторной");
+    int choise = 0;
+    scanf("%d", &choise);
+    switch (choise) {
+    case 1:
+        zad1();
+        break;
+    case 2:
+        zad2();
+        break;
+    case 3:
+        zad3();
+        break;
+    case 4:
+        zad4();
+        break;
+    }
+    getchar();
+}
 int zad1() {
-        int count;
-        char symbol;
-        printf("Введите количество символов: ");
-        scanf("%d", &count);
-        printf("Введите символ для печати: ");
-        scanf(" %c", &symbol); 
-        printf("\nБазовый вывод:\n");
-        for (int start = 1; start <= count; start++) {
+    int count;
+    char symbol;
+    printf("Введите количество символов: ");
+    scanf("%d", &count);
+    printf("Введите символ для печати: ");
+    scanf(" %c", &symbol);
+    printf("\nБазовый вывод:\n");
+    for (int start = 1; start <= count; start++) {
+        putchar(symbol);
+    }
+    printf("\n");
+    printf("\nС символом '+' в начале и конце:\n");
+    putchar('+');
+    for (int start = 1; start <= count; start++) {
+        putchar(symbol);
+    }
+    putchar('+');
+    printf("\n");
+    printf("\nПоловина символов '%c', половина символов '*':\n", symbol);
+    for (int start = 1; start <= count; start++) {
+        if (start <= count / 2) {
             putchar(symbol);
         }
-        printf("\n");
-        printf("\nС символом '+' в начале и конце:\n");
-        putchar('+');
-        for (int start = 1; start <= count; start++) {
-            putchar(symbol);
+        else {
+            putchar('*');
         }
-        putchar('+');
-        printf("\n");
-        printf("\nПоловина символов '%c', половина символов '*':\n", symbol);
-        for (int start = 1; start <= count; start++) {
-            if (start <= count / 2) {
-                putchar(symbol);
+    }
+    printf("\n");
+    printf("\nС восклицательным знаком после каждого символа:\n");
+    for (int start = 1; start <= count; start++) {
+        putchar(symbol);
+        putchar('!');
+    }
+    printf("\n");
+    printf("\nРамочка\n");
+    for (int row = 1; row <= 4; row++) {
+        for (int col = 1; col <= 8; col++) {
+            if (row == 1 || row == 4) {
+                putchar('-');
+            }
+            else if (col == 1) {
+                putchar('|');
             }
             else {
-                putchar('*');
+                putchar(' ');
             }
         }
         printf("\n");
-        printf("\nС восклицательным знаком после каждого символа:\n");
-        for (int start = 1; start <= count; start++) {
-            putchar(symbol);
-            putchar('!');
-        }
-        printf("\n");
-        printf("\nСоздание рамочки с 3 сторон\n");
-        for (int row = 1; row <= 4; row++) {
-            for (int col = 1; col <= 8; col++) {
-                if (row == 1 || row == 4) {
-                    putchar('-');
-                }
-                else if (col == 1) {
-                    putchar('|');    
-                }
-                else {
-                    putchar(' ');
-                }
-            }
-            printf("\n"); 
-        }
-        return 0;
+    }
+    return 0;
 }
 int zad2() {
     int n, m;
@@ -83,49 +109,6 @@ int zad2() {
     printf("Количество нечётных чисел: %d\n", odd);
     return 0;
 }
-
-int zad4() {
-    double a = 0.0;     
-    double b = 2.0;     
-    double h;
-    double x = a;
-    double y;
-    double min_y = 0.0;
-    double max_y =0.0;
-    double min_x =0.0;
-    double max_x = 0.0;
-    printf("Функция: y = x^2 + 3x - 1\n");
-    printf("Введите шаг h: ");
-    scanf("%lf", &h);
-    int first = 1;
-    printf("\n-----------------------\n");
-    printf("|    x    |     y     |\n");
-    printf("-----------------------\n");
-    for (x = a; x <= b+1e-9; x += h) {
-        y = x * x + 3 * x - 1;
-        printf("| %7.2lf | %9.4lf |\n", x, y);
-        if (first) {
-            min_y = max_y = y;
-            min_x = max_x = x;
-            first = 0;
-        }
-        else {
-            if (y > max_y) {
-                max_y = y;
-                max_x = x;
-            }
-            if (y < min_y) {
-                min_y = y;
-                min_x = x;
-            }
-        }
-    }
-    printf("-----------------------\n");
-    printf("Максимум: y = %.4lf при x = %.2lf\n", max_y, max_x);
-    printf("Минимум:  y = %.4lf при x = %.2lf\n", min_y, min_x);
-
-    return 0;
-}
 int zad3() {
     int n;
     int type;
@@ -146,20 +129,20 @@ int zad3() {
         int result = 1;
         for (int i = 0; i <= n; i++) {
             printf("2^%d = %d\n", i, result);
-            result *= 2; 
+            result *= 2;
         }
     }
     else if (type == 2) {
         unsigned int result = 1;
         for (int i = 0; i <= n; i++) {
-            printf("2^%d = %u\n", i, result); 
+            printf("2^%d = %u\n", i, result);
             result *= 2;
         }
     }
     else if (type == 3) {
         long long result = 1;
         for (int i = 0; i <= n; i++) {
-            printf("2^%d = %lld\n", i, result); 
+            printf("2^%d = %lld\n", i, result);
             result *= 2;
         }
     }
@@ -194,25 +177,45 @@ int zad3() {
 
     return 0;
 }
-
-int main() {
-    (setlocale(LC_ALL, "RUS"));
-    puts("Введите номер задания из лабораторной");
-    int choise = 0;
-    scanf("%d", &choise);
-    switch (choise) {
-    case 1:
-        zad1();
-        break;
-    case 2:
-        zad2();
-        break;
-    case 3:
-        zad3();
-        break;
-    case 4:
-        zad4();
-        break;
+int zad4() {
+    double a = 0.0;
+    double b = 2.0;
+    double h;
+    double x = a;
+    double y;
+    double min_y = 0.0;
+    double max_y = 0.0;
+    double min_x = 0.0;
+    double max_x = 0.0;
+    printf("Функция: y = x^2 + 3x - 1\n");
+    printf("Введите шаг h: ");
+    scanf("%lf", &h);
+    int first = 1;
+    printf("\n-----------------------\n");
+    printf("|    x    |     y     |\n");
+    printf("-----------------------\n");
+    for (x = a; x <= b + 1e-9; x += h) {
+        y = x * x + 3 * x - 1;
+        printf("| %7.2lf | %9.4lf |\n", x, y);
+        if (first) {
+            min_y = max_y = y;
+            min_x = max_x = x;
+            first = 0;
+        }
+        else {
+            if (y > max_y) {
+                max_y = y;
+                max_x = x;
+            }
+            if (y < min_y) {
+                min_y = y;
+                min_x = x;
+            }
+        }
     }
-    getchar();
+    printf("-----------------------\n");
+    printf("Максимум: y = %.4lf при x = %.2lf\n", max_y, max_x);
+    printf("Минимум:  y = %.4lf при x = %.2lf\n", min_y, min_x);
+
+    return 0;
 }
