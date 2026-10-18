@@ -25,7 +25,7 @@
 
 ### Блок-схема 
 
-<img width="842" height="910" alt="image" src="https://github.com/user-attachments/assets/f8a5c5d7-e860-44d6-a7ec-32b5b18843e7" />
+<img width="696" height="892" alt="image" src="https://github.com/user-attachments/assets/71674ee3-6e03-4f60-aec6-a7b0314e55a0" />
 
 
 ## 2. Реализация программы
