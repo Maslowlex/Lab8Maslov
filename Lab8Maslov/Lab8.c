@@ -6,7 +6,6 @@ int zad1();
 int zad2();
 int zad3();
 int zad4();
-int homework();
 int main() {
     (setlocale(LC_ALL, "RUS"));
     puts("Введите номер задания из лабораторной");
@@ -24,10 +23,6 @@ int main() {
         break;
     case 4:
         zad4();
-        break;
-
-    case 5:
-        homework();
         break;
     }
     getchar();
@@ -220,24 +215,6 @@ int zad4() {
     printf("-----------------------\n");
     printf("Максимум: y = %.4lf при x = %.2lf\n", max_y, max_x);
     printf("Минимум:  y = %.4lf при x = %.2lf\n", min_y, min_x);
-
-    return 0;
-}
-int homework() {
-    int n;
-    double sum = 0.0; 
-    printf("Вычисление суммы: 1/3^2 + 1/5^2 + 1/7^2 + ... + 1/(2n+1)^2\n");
-    printf("Введите значение n: ");
-    scanf("%d", &n);
-    if (n < 1) {
-        printf("Ошибка: n должно быть больше или равно 1\n");
-        return 1;
-    }
-    for (int i = 1; i <= n; i++) {
-        double denominator = 2.0 * i + 1.0;
-        sum += 1.0 / (denominator * denominator);
-    }
-    printf("\nСумма ряда для n = %d равна: %.6lf\n", n, sum);
 
     return 0;
 }
