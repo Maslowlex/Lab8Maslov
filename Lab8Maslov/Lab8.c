@@ -61,22 +61,6 @@ int zad1() {
         putchar(symbol);
         putchar('!');
     }
-    printf("\n");
-    printf("\nРамочка\n");
-    for (int row = 1; row <= 4; row++) {
-        for (int col = 1; col <= 8; col++) {
-            if (row == 1 || row == 4) {
-                putchar('-');
-            }
-            else if (col == 1) {
-                putchar('|');
-            }
-            else {
-                putchar(' ');
-            }
-        }
-        printf("\n");
-    }
     return 0;
 }
 int zad2() {
