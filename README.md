@@ -1,4 +1,4 @@
-# Работа 8 (Вариант 13)
+# Работа 8 (Вариант 13/1)
 
 ## Условие задачи
 
@@ -29,10 +29,11 @@
 
 ## 3. Результат работы программы
 
-Вычисление суммы: 1/3^2 + 1/5^2 + ... + 1/(2n+1)^2
-Введите значение n: 3
+<img width="1195" height="372" alt="image" src="https://github.com/user-attachments/assets/5b297f46-aaba-44ae-8801-6ceb05fc3314" />
+<img width="1357" height="337" alt="image" src="https://github.com/user-attachments/assets/da3efd13-d54e-4a56-8253-3cd2fd7ec10a" />
+<img width="1912" height="966" alt="image" src="https://github.com/user-attachments/assets/d8cc0da5-2221-4552-aec8-f334280d6725" />
+<img width="1910" height="757" alt="image" src="https://github.com/user-attachments/assets/75d4571d-17d7-4c0e-a24a-06f209117ce4" />
 
-Сумма ряда для n = 3 равна: 0.171542
 
 ## 4. Информация о разработчике
 
