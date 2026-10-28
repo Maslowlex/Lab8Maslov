@@ -4,23 +4,25 @@
 
 <img width="1036" height="305" alt="image" src="https://github.com/user-attachments/assets/d3380b00-f41f-49d4-ab94-266ee4a65733" />
 <img width="1015" height="117" alt="image" src="https://github.com/user-attachments/assets/aa4e5a0a-ecb2-457e-900d-fc5c02aa2374" />
+<img width="1031" height="497" alt="image" src="https://github.com/user-attachments/assets/2979609c-289e-42bd-b134-a3edcd588309" />
+<img width="1036" height="406" alt="image" src="https://github.com/user-attachments/assets/fdc192c9-edd2-4f1b-8b8b-f48e186bf9b4" />
 <img width="808" height="308" alt="image" src="https://github.com/user-attachments/assets/6b4441ae-5532-4c3b-a1a4-d29693b70957" />
 
 ## 1. Алгоритм и блок-схема
 
-### Алгоритм решения
 1. **НАЧАЛО**
-2. Объявление переменной `n` (целое число) и `sum` (вещественное число, начальное значение 0.0).
-3. Вывод "Введите значение n: ".
-4. Ввод значения `n` с клавиатуры.
-5. Проверка: если `n < 1`, вывод ошибки и завершение.
-6. Цикл `for` (переменная `i` от 1 до `n`):
-   - Вычисление знаменателя: `denominator = 2 * i + 1`.
-   - Вычисление дроби: `term = 1.0 / (denominator * denominator)`.
-   - Накопление суммы: `sum = sum + term`.
-7. Вывод результата `sum`.
-8. **КОНЕЦ**
-
+2. Установка русской локали (`setlocale`).
+3. Вывод приглашения: "Введите номер задания из лабораторной".
+4. Ввод значения `choise`.
+5. **Оператор `switch(choise)`:**
+   * **`case 1`:** Вызов функции `zad1()`.
+   * **`case 2`:** Вызов функции `zad2()`.
+   * **`case 3`:** Вызов функции `zad3()`.
+   * **`case 4`:** Вызов функции `zad4()`.
+   * Если введено другое число — вывод "Неверный номер задания".
+6. Ожидание нажатия клавиши (`getchar()`).
+7. **КОНЕЦ**
+   
 ### Блок-схема 
 
 <img width="696" height="892" alt="image" src="https://github.com/user-attachments/assets/71674ee3-6e03-4f60-aec6-a7b0314e55a0" />
