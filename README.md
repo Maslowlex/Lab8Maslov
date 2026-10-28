@@ -25,10 +25,7 @@
    
 ### Блок-схема 
 
-<img width="696" height="892" alt="image" src="https://github.com/user-attachments/assets/71674ee3-6e03-4f60-aec6-a7b0314e55a0" />
-
-
-## 2. Реализация программы
+<img width="822" height="912" alt="ful8 drawio" src="https://github.com/user-attachments/assets/809ab7a8-208f-43e8-92ed-5438511c9c2a" />
 
 ## 3. Результат работы программы
 
