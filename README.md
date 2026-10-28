@@ -1,13 +1,10 @@
 # Работа 8 (Вариант 13)
 
 ## Условие задачи
-Написать программу, которая вычисляет сумму ряда с использованием цикла `for` для заданного значения `n`:
 
 <img width="1036" height="305" alt="image" src="https://github.com/user-attachments/assets/d3380b00-f41f-49d4-ab94-266ee4a65733" />
-
-
-
----
+<img width="1015" height="117" alt="image" src="https://github.com/user-attachments/assets/aa4e5a0a-ecb2-457e-900d-fc5c02aa2374" />
+<img width="808" height="308" alt="image" src="https://github.com/user-attachments/assets/6b4441ae-5532-4c3b-a1a4-d29693b70957" />
 
 ## 1. Алгоритм и блок-схема
 
