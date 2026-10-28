@@ -3,7 +3,8 @@
 ## Условие задачи
 Написать программу, которая вычисляет сумму ряда с использованием цикла `for` для заданного значения `n`:
 
-<img width="371" height="102" alt="image" src="https://github.com/user-attachments/assets/2469dc97-ed0e-49ca-9f73-1139fe0b48b3" />
+<img width="1036" height="305" alt="image" src="https://github.com/user-attachments/assets/d3380b00-f41f-49d4-ab94-266ee4a65733" />
+
 
 
 ---
