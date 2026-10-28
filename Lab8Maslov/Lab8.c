@@ -24,6 +24,9 @@ int main() {
     case 4:
         zad4();
         break;
+    default:
+        printf("Неверный номер задания");
+		break;
     }
     getchar();
 }
