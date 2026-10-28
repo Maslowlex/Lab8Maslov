@@ -1,41 +1,39 @@
-# Домашнее задание к работе 8 (Вариант 13)
+# Работа 8 (Вариант 13/1)
 
 ## Условие задачи
-Написать программу, которая вычисляет сумму ряда с использованием цикла `for` для заданного значения `n`:
 
-<img width="371" height="102" alt="image" src="https://github.com/user-attachments/assets/2469dc97-ed0e-49ca-9f73-1139fe0b48b3" />
-
-
----
+<img width="1036" height="305" alt="image" src="https://github.com/user-attachments/assets/d3380b00-f41f-49d4-ab94-266ee4a65733" />
+<img width="1015" height="117" alt="image" src="https://github.com/user-attachments/assets/aa4e5a0a-ecb2-457e-900d-fc5c02aa2374" />
+<img width="1031" height="497" alt="image" src="https://github.com/user-attachments/assets/2979609c-289e-42bd-b134-a3edcd588309" />
+<img width="1036" height="406" alt="image" src="https://github.com/user-attachments/assets/fdc192c9-edd2-4f1b-8b8b-f48e186bf9b4" />
+<img width="808" height="308" alt="image" src="https://github.com/user-attachments/assets/6b4441ae-5532-4c3b-a1a4-d29693b70957" />
 
 ## 1. Алгоритм и блок-схема
 
-### Алгоритм решения
 1. **НАЧАЛО**
-2. Объявление переменной `n` (целое число) и `sum` (вещественное число, начальное значение 0.0).
-3. Вывод "Введите значение n: ".
-4. Ввод значения `n` с клавиатуры.
-5. Проверка: если `n < 1`, вывод ошибки и завершение.
-6. Цикл `for` (переменная `i` от 1 до `n`):
-   - Вычисление знаменателя: `denominator = 2 * i + 1`.
-   - Вычисление дроби: `term = 1.0 / (denominator * denominator)`.
-   - Накопление суммы: `sum = sum + term`.
-7. Вывод результата `sum`.
-8. **КОНЕЦ**
-
+2. Установка русской локали (`setlocale`).
+3. Вывод приглашения: "Введите номер задания из лабораторной".
+4. Ввод значения `choise`.
+5. **Оператор `switch(choise)`:**
+   * **`case 1`:** Вызов функции `zad1()`.
+   * **`case 2`:** Вызов функции `zad2()`.
+   * **`case 3`:** Вызов функции `zad3()`.
+   * **`case 4`:** Вызов функции `zad4()`.
+   * Если введено другое число — вывод "Неверный номер задания".
+6. Ожидание нажатия клавиши (`getchar()`).
+7. **КОНЕЦ**
+   
 ### Блок-схема 
 
-<img width="696" height="892" alt="image" src="https://github.com/user-attachments/assets/71674ee3-6e03-4f60-aec6-a7b0314e55a0" />
-
-
-## 2. Реализация программы
+<img width="822" height="912" alt="ful8 drawio" src="https://github.com/user-attachments/assets/809ab7a8-208f-43e8-92ed-5438511c9c2a" />
 
 ## 3. Результат работы программы
 
-Вычисление суммы: 1/3^2 + 1/5^2 + ... + 1/(2n+1)^2
-Введите значение n: 3
+<img width="1195" height="372" alt="image" src="https://github.com/user-attachments/assets/5b297f46-aaba-44ae-8801-6ceb05fc3314" />
+<img width="1357" height="337" alt="image" src="https://github.com/user-attachments/assets/da3efd13-d54e-4a56-8253-3cd2fd7ec10a" />
+<img width="1912" height="966" alt="image" src="https://github.com/user-attachments/assets/d8cc0da5-2221-4552-aec8-f334280d6725" />
+<img width="1910" height="757" alt="image" src="https://github.com/user-attachments/assets/75d4571d-17d7-4c0e-a24a-06f209117ce4" />
 
-Сумма ряда для n = 3 равна: 0.171542
 
 ## 4. Информация о разработчике
 
